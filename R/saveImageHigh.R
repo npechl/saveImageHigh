@@ -2,17 +2,23 @@
 #'
 #' @description This package saves an R graph in PDF or PNG format with high resolution.
 #'
-#' @param graph
+#' @param graph expression generating a graph
 #'
-#' @param file.name
+#' @param file.name output file name to write
 #'
-#' @param width
+#' @param width output file width
 #'
-#' @param height
+#' @param height output file height
+#'
+#' @param pdf.file PDF file to read
+#'
+#' @param pages PDF pages to read
 #'
 #' @export save_as_pdf
 #'
 #' @export save_as_png
+#'
+#' @export savepng_from_pdf
 
 save_as_pdf = function(graph, file.name = "pdf-graph.pdf", width = 7, height = 7){
 
@@ -28,7 +34,14 @@ save_as_png = function(graph, file.name = "image.png", width = 7, height = 7){
   graph
   dev.off()
 
-  temp = image_read_pdf(path = "temp.pdf")
-  image_write(temp, path = file.name)
+  temp = magick::image_read_pdf(path = "temp.pdf")
+  magick::image_write(temp, path = file.name)
   file.remove("temp.pdf")
+}
+
+save_png_from_pdf = function(pdf.file, file.name = "image.png", pages = NULL){
+
+  temp = magick::image_read_pdf(path = pdf.file, pages = pages)
+  magick::image_write(temp, path = file.name)
+
 }

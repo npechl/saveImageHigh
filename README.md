@@ -8,6 +8,7 @@ Install from Github:
 devtools::install_github("nikopech/saveImageHigh")
 ```
 
+
 ## Usage
 
 ```
