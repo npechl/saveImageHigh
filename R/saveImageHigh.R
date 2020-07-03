@@ -19,6 +19,7 @@
 #' @export save_as_png
 #'
 #' @export save_png_from_pdf
+#'
 
 save_as_pdf = function(graph, file.name = "pdf-graph.pdf", width = 7, height = 7){
 
