@@ -1,2 +1,3 @@
 export(save_as_pdf)
 export(save_as_png)
+export(save_png_from_pdf)
