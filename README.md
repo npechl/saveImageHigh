@@ -1,6 +1,6 @@
 # saveImageHigh
 
-Saving an R graph with high resolution.
+Saving an **R graph** as an image or a pdf **with high resolution**.
 
 Install from Github:
 
