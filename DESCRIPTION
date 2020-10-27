@@ -4,11 +4,11 @@ Title: Save a graph as PDF of PNG with high resolution.
 Version: 1.0.0
 Author: Pechlivanis Nikolaos
 Maintainer: Pechlivanis Nikolaos <nikosp41@gmail.com>
-Description: Save a graph from R as PDF or PNG with high resolution.
+Description: Save a graph from R with high resolution.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 Imports:
-  grDevices,magick,pdftools
+  grDevices,pdftools
 Depends:
   grDevices,magick,pdftools

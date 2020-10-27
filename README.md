@@ -1,6 +1,6 @@
 # saveImageHigh
 
-Saving an R graph as PDF or PNG with high resolution.
+Saving an R graph with high resolution.
 
 Install from Github:
 
@@ -19,6 +19,6 @@ save_as_pdf({print(gr)},
             width = 6,
             height = 4)
 
-save_as_png({plot(1:10, 1:10)},
-            file.name = "first-image.png")
+save_image({plot(1:10, 1:10)},
+           file.name = "first-image.png")
 ```
