@@ -2,12 +2,11 @@
 
 Saving an **R graph** as an image or a pdf **with high resolution**.
 
-Install from Github:
+## Installation
 
 ```
 devtools::install_github("nikopech/saveImageHigh")
 ```
-
 
 ## Usage
 
