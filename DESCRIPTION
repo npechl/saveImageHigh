@@ -1,14 +1,14 @@
 Package: saveImageHigh
 Type: Package
-Title: Save a graph as PDF of PNG with high resolution.
+Title: Save a graph as PDF of PNG with high resolution
 Version: 1.0.0
 Author: Pechlivanis Nikolaos
 Maintainer: Pechlivanis Nikolaos <nikosp41@gmail.com>
-Description: Save a graph from R with high resolution.
+Description: Save a graph from R with high resolution
 License: MIT
 Encoding: UTF-8
 LazyData: true
-Imports:
-  grDevices,pdftools
-Depends:
-  grDevices,magick,pdftools
+Imports: 
+    grDevices,
+    magick
+RoxygenNote: 7.1.1
