@@ -4,13 +4,14 @@ Saving an **R graph** as an image or a pdf **with high resolution**.
 
 ## Installation
 
-```
+```r
+# install.packages("devtools")
 devtools::install_github("nikopech/saveImageHigh")
 ```
 
 ## Usage
 
-```
+```r
 gr = ggplot(mtcars, aes(mpg, disp, color = am)) + geom_point()
 
 save_as_pdf({print(gr)},
